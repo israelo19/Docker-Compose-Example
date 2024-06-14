@@ -12,7 +12,9 @@
 ***REMOVED******REMOVED******REMOVED******REMOVED***"web-vitals":***REMOVED***"^2.1.4"
 ***REMOVED******REMOVED***},
 ***REMOVED******REMOVED***"scripts":***REMOVED***{
-***REMOVED******REMOVED******REMOVED******REMOVED***"start":***REMOVED***"react-scripts***REMOVED***--openssl-legacy-provider***REMOVED***start",
+***REMOVED******REMOVED******REMOVED******REMOVED***"start":***REMOVED***"react-scripts***REMOVED***start",
+***REMOVED******REMOVED******REMOVED******REMOVED***"xstart":***REMOVED***"react-scripts***REMOVED***--openssl-legacy-provider***REMOVED***start",
+
 ***REMOVED******REMOVED******REMOVED******REMOVED***"build":***REMOVED***"react-scripts***REMOVED***build",
 ***REMOVED******REMOVED******REMOVED******REMOVED***"test":***REMOVED***"react-scripts***REMOVED***test",
 ***REMOVED******REMOVED******REMOVED******REMOVED***"eject":***REMOVED***"react-scripts***REMOVED***eject"

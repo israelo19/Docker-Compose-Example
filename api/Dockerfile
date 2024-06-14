@@ -1,7 +1,18 @@
 FROM***REMOVED***alpine:3.20
 
-RUN***REMOVED***apk***REMOVED***add***REMOVED***--no-cache***REMOVED***bash***REMOVED***bash-doc***REMOVED***bash-completion
-RUN***REMOVED***apk***REMOVED***add***REMOVED***--no-cache***REMOVED***musl-dev***REMOVED***
-RUN***REMOVED***apk***REMOVED***add***REMOVED***--no-cache***REMOVED***gfortran***REMOVED***gdb***REMOVED***make
+WORKDIR***REMOVED***/api
 
-RUN***REMOVED***apk***REMOVED***add***REMOVED***--no-cache***REMOVED***nano
+COPY***REMOVED***package.json***REMOVED***/api/package.json
+
+RUN***REMOVED***apk***REMOVED***add***REMOVED***--update***REMOVED***nodejs***REMOVED***npm
+
+RUN***REMOVED***npm***REMOVED***install
+
+COPY***REMOVED***.***REMOVED***/api/
+
+EXPOSE***REMOVED***3000
+
+CMD***REMOVED***["npm",***REMOVED***"start"]
+
+
+

@@ -1,18 +1,18 @@
-FROM alpine:3.20
-
+FROM node:current-alpine3.15
+# Set the working directory to /api
 WORKDIR /www
 
-COPY package.json /www/package.json
+# copy package.json into the container at /api
+COPY package*.json /www/
 
-RUN apk add --update nodejs npm
+# install dependencies
+RUN npm install --force
 
-RUN npm install
-
+# Copy the current directory contents into the container at /api
 COPY . /www/
 
+# Make port 80 available to the world outside this container
 EXPOSE 3000
 
+# Run the app when the container launches
 CMD ["npm", "start"]
-
-
-

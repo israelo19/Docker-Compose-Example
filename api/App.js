@@ -10,7 +10,7 @@ let counter = 0;
 
 //SET UP ROUTES
 App.get('/', function(req, res){
-    res.end("Hello WOrld, Testign the end point")
+    res.end("Hello World, Testign the end point!")
 
 }); 
 

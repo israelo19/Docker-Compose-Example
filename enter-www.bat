@@ -1,0 +1,1 @@
+docker exec -it sspa-iogwu-www ash

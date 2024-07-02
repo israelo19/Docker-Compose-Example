@@ -11,9 +11,10 @@ let port = process.env.PORT;
 App.use(cors());
 App.options('*', cors());
 
-
-
+let user = "d"
+let pass = "dd"
 let counter = 0;
+let loggedIn = false;
 
 //SET UP ROUTES
 App.get('/', function(req, res){
@@ -23,12 +24,22 @@ App.get('/', function(req, res){
  
 
 
+// App.get('/count', function(req, res){
+//     counter++;
+//     // res.end(`Count: ${counter}`)
+//     res.json({count: counter})
+// });
+App.get('/login', function(req, res){
+    
+    loggedIn = !loggedIn;
+    // res.end(`Logged In: ${logged}`)
+    // console.log(`Logged In: ${logged}`)
+    console.log("Logged:", loggedIn);
 
-App.get('/count', function(req, res){
-    counter++;
-    // res.end(`Count: ${counter}`)
-    res.json({count: counter})
+    res.json({loggedIn})
+    // res.json({log: logged})
 });
+
 App.delete('/count', function(req, res){
     counter = 0;
     // res.end(`Count: ${counter}`)
@@ -39,6 +50,13 @@ App.delete('/count', function(req, res){
 
 App.get('/sum/:v1/:v2', (req, res) => {
     const {v1, v2} = req.params;
+    res.json({sum:((+v1)+(+v2))})
+});
+
+App.post('/login', (req, res) => {
+    const {username, password} = req.params;
+
+    //logic check with username and pass
     res.json({sum:((+v1)+(+v2))})
 });
 

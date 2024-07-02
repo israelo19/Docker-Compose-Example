@@ -1,7 +1,8 @@
+import***REMOVED***React***REMOVED***from***REMOVED***'react';
 import***REMOVED***logo***REMOVED***from***REMOVED***'./logo.svg';
 import***REMOVED***'./App.css';
 
-function***REMOVED***App()***REMOVED***{
+const***REMOVED***App***REMOVED***=***REMOVED***()***REMOVED***=>***REMOVED***{
 ***REMOVED******REMOVED***return***REMOVED***(
 ***REMOVED******REMOVED******REMOVED******REMOVED***<div***REMOVED***className="App">
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***<header***REMOVED***className="App-header">
@@ -15,7 +16,7 @@ function***REMOVED***App()***REMOVED***{
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***target="_blank"
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***rel="noopener***REMOVED***noreferrer"
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***>
-***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***Learn***REMOVED***React
+***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***Learn***REMOVED***React!!!
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***</a>
 ***REMOVED******REMOVED******REMOVED******REMOVED******REMOVED******REMOVED***</header>
 ***REMOVED******REMOVED******REMOVED******REMOVED***</div>

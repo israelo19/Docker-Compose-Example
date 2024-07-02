@@ -10,7 +10,7 @@ let***REMOVED***counter***REMOVED***=***REMOVED***0;
 
 //SET***REMOVED***UP***REMOVED***ROUTES
 App.get('/',***REMOVED***function(req,***REMOVED***res){
-***REMOVED******REMOVED******REMOVED******REMOVED***res.end("Hello***REMOVED***WOrld,***REMOVED***Testign***REMOVED***the***REMOVED***end***REMOVED***point")
+***REMOVED******REMOVED******REMOVED******REMOVED***res.end("Hello***REMOVED***World,***REMOVED***Testign***REMOVED***the***REMOVED***end***REMOVED***point!")
 
 });***REMOVED***
 

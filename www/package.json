@@ -3,8 +3,9 @@
 ***REMOVED******REMOVED***"version":***REMOVED***"0.1.0",
 ***REMOVED******REMOVED***"private":***REMOVED***true,
 ***REMOVED******REMOVED***"dependencies":***REMOVED***{
-***REMOVED******REMOVED******REMOVED******REMOVED***"react":***REMOVED***"^17.0.2",
-***REMOVED******REMOVED******REMOVED******REMOVED***"react-dom":***REMOVED***"^17.0.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"axios":***REMOVED***"^1.7.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"react":***REMOVED***"17.0.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"react-dom":***REMOVED***"17.0.2",
 ***REMOVED******REMOVED******REMOVED******REMOVED***"react-scripts":***REMOVED***"3.2.0"
 ***REMOVED******REMOVED***},
 ***REMOVED******REMOVED***"scripts":***REMOVED***{

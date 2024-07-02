@@ -1,10 +1,17 @@
-let***REMOVED***express***REMOVED***=***REMOVED***require("express");
+let***REMOVED***express***REMOVED***=***REMOVED***require('express');
+
+let***REMOVED***cors***REMOVED***=***REMOVED***require('cors');
 
 let***REMOVED***App***REMOVED***=***REMOVED***express();***REMOVED***//instantiates***REMOVED***the***REMOVED***app
 
 let***REMOVED***http***REMOVED***=***REMOVED***require("http").Server(App);***REMOVED***//http***REMOVED***server***REMOVED***is***REMOVED***built***REMOVED***on***REMOVED***express
 
 let***REMOVED***port***REMOVED***=***REMOVED***process.env.PORT;
+
+App.use(cors());
+App.options('*',***REMOVED***cors());
+
+
 
 let***REMOVED***counter***REMOVED***=***REMOVED***0;
 
@@ -13,14 +20,19 @@ App.get('/',***REMOVED***function(req,***REMOVED***res){
 ***REMOVED******REMOVED******REMOVED******REMOVED***res.end("Hello***REMOVED***World,***REMOVED***Testign***REMOVED***the***REMOVED***end***REMOVED***point!")
 
 });***REMOVED***
-
+***REMOVED***
 
 
 
 App.get('/count',***REMOVED***function(req,***REMOVED***res){
 ***REMOVED******REMOVED******REMOVED******REMOVED***counter++;
-***REMOVED******REMOVED******REMOVED******REMOVED***res.end(`Count:***REMOVED***${counter}`)
-
+***REMOVED******REMOVED******REMOVED******REMOVED***//***REMOVED***res.end(`Count:***REMOVED***${counter}`)
+***REMOVED******REMOVED******REMOVED******REMOVED***res.json({count:***REMOVED***counter})
+});
+App.delete('/count',***REMOVED***function(req,***REMOVED***res){
+***REMOVED******REMOVED******REMOVED******REMOVED***counter***REMOVED***=***REMOVED***0;
+***REMOVED******REMOVED******REMOVED******REMOVED***//***REMOVED***res.end(`Count:***REMOVED***${counter}`)
+***REMOVED******REMOVED******REMOVED******REMOVED***res.json({count:***REMOVED***0})
 });
 
 

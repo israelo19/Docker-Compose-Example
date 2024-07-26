@@ -21,10 +21,12 @@ services:
     # ports:
     #   - 4000:4000
     environment:
+      - ACCESS_TOKEN_SECRET='635bcc94ad15e3740d7a132fba5e1ffe750f88a78028209aff437af10ca690125445f18d9aa75e0a31a68d11c5fc00240a0c0bf15bb5db508d17e18359df034b'
+      - REFRESH_TOKEN_SECRET='92299f02cbd13465323a3721b010e7bd20350a194efdeb41d961b1e2f93dc5d332479d972948237792666aad9377e379e69918ddf56d9bca390b38e43f71f7ca'
       - PORT=4000
       - MESSAGE=Hello World!
       - CHOKIDAR_USEPOLLING="true"
-
+      - MONGO_URL=mongodb://mongouser:123456@mongo/mongodatabase
     volumes:
       - ./api:/api
       - /api/node_modules
@@ -41,3 +43,23 @@ services:
     depends_on:
       - api
       - www
+
+
+  mongo:
+    container_name: mongo
+    image: mongo:4.0-rc-xenial
+    # networks:
+    #   - plotnet
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=mongodatabase
+      - MONGO_INITDB_ROOT_USERNAME=mongouser
+      - MONGO_INITDB_ROOT_PASSWORD=123456
+    volumes:
+      - ./db-setup/001_users.js:/docker-entrypoint-initdb.d/001_users.js:ro
+      - ./db:/data/db
+      - ./db-backup:/db-backup
+    ports:
+      - 27017:27017
+# networks:
+#   plotnet:

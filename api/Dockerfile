@@ -6,7 +6,7 @@ COPY package.json /api/package.json
 
 RUN apk add --update nodejs npm
 
-RUN npm install
+RUN npm install --force
 
 COPY . /api/
 

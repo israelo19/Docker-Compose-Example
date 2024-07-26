@@ -1,0 +1,22 @@
+const***REMOVED***express***REMOVED***=***REMOVED***require("express");
+const***REMOVED***router***REMOVED***=***REMOVED***express.Router({mergeParams:***REMOVED***true});
+const***REMOVED***mongoose***REMOVED***=***REMOVED***require('mongoose');
+
+//tests***REMOVED***that***REMOVED***mongoose***REMOVED***exists,***REMOVED***if***REMOVED***it***REMOVED***doesn't***REMOVED***it***REMOVED***makes***REMOVED***sures***REMOVED***the***REMOVED***connection***REMOVED***exists
+//
+router.get("/test",***REMOVED***(req,***REMOVED***res)***REMOVED***=>***REMOVED***{
+	//***REMOVED***mongoose.set('autoIndex',***REMOVED***true);
+	if(mongoose***REMOVED***&&***REMOVED***mongoose.connection***REMOVED***&&***REMOVED***mongoose.connection.readyState***REMOVED***==***REMOVED***1){		
+		res.json({connected:true,***REMOVED***dt:new***REMOVED***Date()})
+		return
+	}
+	mongoose.connect(***REMOVED***process.env.MONGO_URL,{***REMOVED***useNewUrlParser:***REMOVED***true,autoIndex:***REMOVED***true***REMOVED***})
+	.then(()***REMOVED***=>***REMOVED***{
+		res.json({connected:true,***REMOVED***dt:new***REMOVED***Date()})
+	})
+	.catch(err***REMOVED***=>***REMOVED***{
+		res.json({connected:false,***REMOVED***dt:new***REMOVED***Date(),***REMOVED***err})
+	});
+})
+module.exports***REMOVED***=***REMOVED***router;
+***REMOVED***

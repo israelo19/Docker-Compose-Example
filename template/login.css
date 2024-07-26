@@ -1,0 +1,251 @@
+@import***REMOVED***url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+
+****REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***box-sizing:***REMOVED***border-box;
+}
+
+body***REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***background:***REMOVED***#000000;
+***REMOVED******REMOVED******REMOVED******REMOVED***display:***REMOVED***flex;
+***REMOVED******REMOVED******REMOVED******REMOVED***justify-content:***REMOVED***center;
+***REMOVED******REMOVED******REMOVED******REMOVED***align-items:***REMOVED***center;
+***REMOVED******REMOVED******REMOVED******REMOVED***flex-direction:***REMOVED***column;
+***REMOVED******REMOVED******REMOVED******REMOVED***font-family:***REMOVED***'Source***REMOVED***Code***REMOVED***Pro',***REMOVED***monospace;
+***REMOVED******REMOVED******REMOVED******REMOVED***height:***REMOVED***100vh;
+***REMOVED******REMOVED******REMOVED******REMOVED***margin:***REMOVED***-20px***REMOVED***0***REMOVED***50px;
+}
+
+h1***REMOVED***{
+	font-weight:***REMOVED***bold;
+	margin:***REMOVED***0;
+}
+
+h2***REMOVED***{
+	text-align:***REMOVED***center;
+}
+
+p***REMOVED***{
+	font-size:***REMOVED***14px;
+	font-weight:***REMOVED***100;
+	line-height:***REMOVED***20px;
+	letter-spacing:***REMOVED***0.5px;
+	margin:***REMOVED***20px***REMOVED***0***REMOVED***30px;
+}
+
+span***REMOVED***{
+	font-size:***REMOVED***12px;
+}
+
+a***REMOVED***{
+	color:***REMOVED***#333;
+	font-size:***REMOVED***14px;
+	text-decoration:***REMOVED***none;
+	margin:***REMOVED***15px***REMOVED***0;
+}
+
+button***REMOVED***{
+	border-radius:***REMOVED***20px;
+	border:***REMOVED***1px***REMOVED***solid***REMOVED***#26ab26;
+	background-color:***REMOVED***#26ab26;
+	color:***REMOVED***#FFFFFF;
+	font-size:***REMOVED***12px;
+	font-weight:***REMOVED***bold;
+	padding:***REMOVED***12px***REMOVED***45px;
+	letter-spacing:***REMOVED***1px;
+	text-transform:***REMOVED***uppercase;
+	transition:***REMOVED***transform***REMOVED***80ms***REMOVED***ease-in;
+}
+
+button:active***REMOVED***{
+	transform:***REMOVED***scale(0.95);
+}
+
+button:focus***REMOVED***{
+	outline:***REMOVED***none;
+}
+
+button.ghost***REMOVED***{
+	background-color:***REMOVED***transparent;
+	border-color:***REMOVED***#FFFFFF;
+}
+
+form***REMOVED***{
+	background-color:***REMOVED***#808080;
+	display:***REMOVED***flex;
+	align-items:***REMOVED***center;
+	justify-content:***REMOVED***center;
+	flex-direction:***REMOVED***column;
+	padding:***REMOVED***0***REMOVED***50px;
+	height:***REMOVED***100%;
+	text-align:***REMOVED***center;
+}
+
+input***REMOVED***{
+	background-color:***REMOVED***#eee;
+	border:***REMOVED***none;
+	padding:***REMOVED***12px***REMOVED***15px;
+	margin:***REMOVED***8px***REMOVED***0;
+	width:***REMOVED***100%;
+}
+
+.container***REMOVED***{
+	background-color:***REMOVED***#808080;
+	border-radius:***REMOVED***10px;
+***REMOVED******REMOVED***	box-shadow:***REMOVED***0***REMOVED***14px***REMOVED***28px***REMOVED***rgba(0,0,0,0.25),***REMOVED***
+			0***REMOVED***10px***REMOVED***10px***REMOVED***rgba(0,0,0,0.22);
+	position:***REMOVED***relative;
+	overflow:***REMOVED***hidden;
+	width:***REMOVED***768px;
+	max-width:***REMOVED***100%;
+	min-height:***REMOVED***480px;
+}
+
+.form-container***REMOVED***{
+	position:***REMOVED***absolute;
+	top:***REMOVED***0;
+	height:***REMOVED***100%;
+	transition:***REMOVED***all***REMOVED***0.6s***REMOVED***ease-in-out;
+}
+
+.sign-in-container***REMOVED***{
+	left:***REMOVED***0;
+	width:***REMOVED***50%;
+	z-index:***REMOVED***2;
+}
+
+.container.right-panel-active***REMOVED***.sign-in-container***REMOVED***{
+	transform:***REMOVED***translateX(100%);
+}
+
+.sign-up-container***REMOVED***{
+	left:***REMOVED***0;
+	width:***REMOVED***50%;
+	opacity:***REMOVED***0;
+	z-index:***REMOVED***1;
+}
+
+.container.right-panel-active***REMOVED***.sign-up-container***REMOVED***{
+	transform:***REMOVED***translateX(100%);
+	opacity:***REMOVED***1;
+	z-index:***REMOVED***5;
+	animation:***REMOVED***show***REMOVED***0.6s;
+}
+
+@keyframes***REMOVED***show***REMOVED***{
+	0%,***REMOVED***49.99%***REMOVED***{
+		opacity:***REMOVED***0;
+		z-index:***REMOVED***1;
+	}
+	
+	50%,***REMOVED***100%***REMOVED***{
+		opacity:***REMOVED***1;
+		z-index:***REMOVED***5;
+	}
+}
+
+.overlay-container***REMOVED***{
+	position:***REMOVED***absolute;
+	top:***REMOVED***0;
+	left:***REMOVED***50%;
+	width:***REMOVED***50%;
+	height:***REMOVED***100%;
+	overflow:***REMOVED***hidden;
+	transition:***REMOVED***transform***REMOVED***0.6s***REMOVED***ease-in-out;
+	z-index:***REMOVED***100;
+}
+
+.container.right-panel-active***REMOVED***.overlay-container{
+	transform:***REMOVED***translateX(-100%);
+}
+
+.overlay***REMOVED***{
+	background:***REMOVED***#103b04;
+	background:***REMOVED***-webkit-linear-gradient(to***REMOVED***right,***REMOVED***#254f1a,***REMOVED***#254e1a);
+	background:***REMOVED***linear-gradient(to***REMOVED***right,***REMOVED***#11260b,***REMOVED***#3cd910);
+	background-repeat:***REMOVED***no-repeat;
+	background-size:***REMOVED***cover;
+	background-position:***REMOVED***0***REMOVED***0;
+	color:***REMOVED***#FFFFFF;
+	position:***REMOVED***relative;
+	left:***REMOVED***-100%;
+	height:***REMOVED***100%;
+	width:***REMOVED***200%;
+***REMOVED******REMOVED***	transform:***REMOVED***translateX(0);
+	transition:***REMOVED***transform***REMOVED***0.6s***REMOVED***ease-in-out;
+}
+
+.container.right-panel-active***REMOVED***.overlay***REMOVED***{
+***REMOVED******REMOVED***	transform:***REMOVED***translateX(50%);
+}
+
+.overlay-panel***REMOVED***{
+	position:***REMOVED***absolute;
+	display:***REMOVED***flex;
+	align-items:***REMOVED***center;
+	justify-content:***REMOVED***center;
+	flex-direction:***REMOVED***column;
+	padding:***REMOVED***0***REMOVED***40px;
+	text-align:***REMOVED***center;
+	top:***REMOVED***0;
+	height:***REMOVED***100%;
+	width:***REMOVED***50%;
+	transform:***REMOVED***translateX(0);
+	transition:***REMOVED***transform***REMOVED***0.6s***REMOVED***ease-in-out;
+}
+
+.overlay-left***REMOVED***{
+	transform:***REMOVED***translateX(-20%);
+}
+
+.container.right-panel-active***REMOVED***.overlay-left***REMOVED***{
+	transform:***REMOVED***translateX(0);
+}
+
+.overlay-right***REMOVED***{
+	right:***REMOVED***0;
+	transform:***REMOVED***translateX(0);
+}
+
+.container.right-panel-active***REMOVED***.overlay-right***REMOVED***{
+	transform:***REMOVED***translateX(20%);
+}
+
+.social-container***REMOVED***{
+	margin:***REMOVED***20px***REMOVED***0;
+}
+
+.social-container***REMOVED***a***REMOVED***{
+	border:***REMOVED***1px***REMOVED***solid***REMOVED***#DDDDDD;
+	border-radius:***REMOVED***50%;
+	display:***REMOVED***inline-flex;
+	justify-content:***REMOVED***center;
+	align-items:***REMOVED***center;
+	margin:***REMOVED***0***REMOVED***5px;
+	height:***REMOVED***40px;
+	width:***REMOVED***40px;
+}
+
+footer***REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***background-color:***REMOVED***#222;
+***REMOVED******REMOVED******REMOVED******REMOVED***color:***REMOVED***#fff;
+***REMOVED******REMOVED******REMOVED******REMOVED***font-size:***REMOVED***14px;
+***REMOVED******REMOVED******REMOVED******REMOVED***bottom:***REMOVED***0;
+***REMOVED******REMOVED******REMOVED******REMOVED***position:***REMOVED***fixed;
+***REMOVED******REMOVED******REMOVED******REMOVED***left:***REMOVED***0;
+***REMOVED******REMOVED******REMOVED******REMOVED***right:***REMOVED***0;
+***REMOVED******REMOVED******REMOVED******REMOVED***text-align:***REMOVED***center;
+***REMOVED******REMOVED******REMOVED******REMOVED***z-index:***REMOVED***999;
+}
+
+footer***REMOVED***p***REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***margin:***REMOVED***10px***REMOVED***0;
+}
+
+footer***REMOVED***i***REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***color:***REMOVED***#808080;
+}
+
+footer***REMOVED***a***REMOVED***{
+***REMOVED******REMOVED******REMOVED******REMOVED***color:***REMOVED***#3c97bf;
+***REMOVED******REMOVED******REMOVED******REMOVED***text-decoration:***REMOVED***none;
+}

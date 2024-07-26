@@ -14,6 +14,9 @@
 ***REMOVED******REMOVED***},
 ***REMOVED******REMOVED***"dependencies":***REMOVED***{
 ***REMOVED******REMOVED******REMOVED******REMOVED***"cors":***REMOVED***"^2.8.5",
-***REMOVED******REMOVED******REMOVED******REMOVED***"express":***REMOVED***"^4.19.2"
+***REMOVED******REMOVED******REMOVED******REMOVED***"express":***REMOVED***"^4.19.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"jsonwebtoken":***REMOVED***"^9.0.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"jwt-decode":***REMOVED***"^4.0.0",
+***REMOVED******REMOVED******REMOVED******REMOVED***"mongoose":***REMOVED***"^8.5.1"
 ***REMOVED******REMOVED***}
 }

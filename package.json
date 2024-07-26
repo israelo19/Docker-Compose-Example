@@ -1,6 +1,7 @@
 {
 ***REMOVED******REMOVED***"dependencies":***REMOVED***{
 ***REMOVED******REMOVED******REMOVED******REMOVED***"body-parser":***REMOVED***"^1.20.2",
-***REMOVED******REMOVED******REMOVED******REMOVED***"express":***REMOVED***"^4.19.2"
+***REMOVED******REMOVED******REMOVED******REMOVED***"express":***REMOVED***"^4.19.2",
+***REMOVED******REMOVED******REMOVED******REMOVED***"jsonwebtoken":***REMOVED***"^9.0.2"
 ***REMOVED******REMOVED***}
 }

@@ -52,3 +52,4 @@ db/WiredTigerLAS.wt
 db/WiredTiger.wt
 db/WiredTiger.turtle
 db/WiredTiger.lock
+.env
